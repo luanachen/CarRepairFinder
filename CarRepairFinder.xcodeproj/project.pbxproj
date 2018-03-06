@@ -8,20 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		18247748204DB69A0012FE4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18247747204DB69A0012FE4B /* AppDelegate.swift */; };
-		1824774A204DB69A0012FE4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18247749204DB69A0012FE4B /* ViewController.swift */; };
 		1824774D204DB69A0012FE4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1824774B204DB69A0012FE4B /* Main.storyboard */; };
 		1824774F204DB69A0012FE4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1824774E204DB69A0012FE4B /* Assets.xcassets */; };
 		18247752204DB69A0012FE4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18247750204DB69A0012FE4B /* LaunchScreen.storyboard */; };
+		1824775A204DBB260012FE4B /* RepairShopListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18247759204DBB260012FE4B /* RepairShopListTableViewController.swift */; };
+		1824775D204DBB650012FE4B /* RepairShopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1824775B204DBB650012FE4B /* RepairShopTableViewCell.swift */; };
+		1824775E204DBB650012FE4B /* RepairShopTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1824775C204DBB650012FE4B /* RepairShopTableViewCell.xib */; };
+		18247766204DCA8A0012FE4B /* shops.json in Resources */ = {isa = PBXBuildFile; fileRef = 18247765204DCA8A0012FE4B /* shops.json */; };
+		18247768204DCF1F0012FE4B /* GetAPIData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18247767204DCF1F0012FE4B /* GetAPIData.swift */; };
+		1824776A204DD09D0012FE4B /* ShopsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18247769204DD09D0012FE4B /* ShopsModel.swift */; };
+		1824776E204DF6790012FE4B /* ShopDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1824776D204DF6790012FE4B /* ShopDetailViewController.swift */; };
+		692F4259C0B9850A23BF258B /* Pods_CarRepairFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C72D1590CDDA9AB7275188F /* Pods_CarRepairFinder.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		063128DA065520257E763FF1 /* Pods-CarRepairFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarRepairFinder.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarRepairFinder/Pods-CarRepairFinder.release.xcconfig"; sourceTree = "<group>"; };
 		18247744204DB69A0012FE4B /* CarRepairFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarRepairFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18247747204DB69A0012FE4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		18247749204DB69A0012FE4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1824774C204DB69A0012FE4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1824774E204DB69A0012FE4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18247751204DB69A0012FE4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18247753204DB69A0012FE4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18247759204DBB260012FE4B /* RepairShopListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepairShopListTableViewController.swift; sourceTree = "<group>"; };
+		1824775B204DBB650012FE4B /* RepairShopTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepairShopTableViewCell.swift; sourceTree = "<group>"; };
+		1824775C204DBB650012FE4B /* RepairShopTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepairShopTableViewCell.xib; sourceTree = "<group>"; };
+		18247765204DCA8A0012FE4B /* shops.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = shops.json; sourceTree = "<group>"; };
+		18247767204DCF1F0012FE4B /* GetAPIData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAPIData.swift; sourceTree = "<group>"; };
+		18247769204DD09D0012FE4B /* ShopsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsModel.swift; sourceTree = "<group>"; };
+		1824776D204DF6790012FE4B /* ShopDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopDetailViewController.swift; sourceTree = "<group>"; };
+		2C72D1590CDDA9AB7275188F /* Pods_CarRepairFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarRepairFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A970B43FAE89ED0B23E5F709 /* Pods-CarRepairFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarRepairFinder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarRepairFinder/Pods-CarRepairFinder.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +45,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				692F4259C0B9850A23BF258B /* Pods_CarRepairFinder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14945276C20047E73A0A03C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A970B43FAE89ED0B23E5F709 /* Pods-CarRepairFinder.debug.xcconfig */,
+				063128DA065520257E763FF1 /* Pods-CarRepairFinder.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		1824773B204DB69A0012FE4B = {
 			isa = PBXGroup;
 			children = (
 				18247746204DB69A0012FE4B /* CarRepairFinder */,
 				18247745204DB69A0012FE4B /* Products */,
+				14945276C20047E73A0A03C9 /* Pods */,
+				185B06A8A99485C48F36491D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +82,76 @@
 		18247746204DB69A0012FE4B /* CarRepairFinder */ = {
 			isa = PBXGroup;
 			children = (
-				18247747204DB69A0012FE4B /* AppDelegate.swift */,
-				18247749204DB69A0012FE4B /* ViewController.swift */,
+				1824776B204DD1B20012FE4B /* Model */,
+				1824776C204DD1D00012FE4B /* Gateway */,
+				18247761204DBFE00012FE4B /* View Controller */,
+				18247760204DBB830012FE4B /* View */,
+				18247764204DC7470012FE4B /* Supporting files */,
+			);
+			path = CarRepairFinder;
+			sourceTree = "<group>";
+		};
+		1824775F204DBB740012FE4B /* Custom cell */ = {
+			isa = PBXGroup;
+			children = (
+				1824775B204DBB650012FE4B /* RepairShopTableViewCell.swift */,
+				1824775C204DBB650012FE4B /* RepairShopTableViewCell.xib */,
+			);
+			path = "Custom cell";
+			sourceTree = "<group>";
+		};
+		18247760204DBB830012FE4B /* View */ = {
+			isa = PBXGroup;
+			children = (
 				1824774B204DB69A0012FE4B /* Main.storyboard */,
+				1824775F204DBB740012FE4B /* Custom cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18247761204DBFE00012FE4B /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18247747204DB69A0012FE4B /* AppDelegate.swift */,
+				18247759204DBB260012FE4B /* RepairShopListTableViewController.swift */,
+				1824776D204DF6790012FE4B /* ShopDetailViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		18247764204DC7470012FE4B /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
 				1824774E204DB69A0012FE4B /* Assets.xcassets */,
 				18247750204DB69A0012FE4B /* LaunchScreen.storyboard */,
 				18247753204DB69A0012FE4B /* Info.plist */,
+				18247765204DCA8A0012FE4B /* shops.json */,
 			);
-			path = CarRepairFinder;
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		1824776B204DD1B20012FE4B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18247769204DD09D0012FE4B /* ShopsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1824776C204DD1D00012FE4B /* Gateway */ = {
+			isa = PBXGroup;
+			children = (
+				18247767204DCF1F0012FE4B /* GetAPIData.swift */,
+			);
+			name = Gateway;
+			sourceTree = "<group>";
+		};
+		185B06A8A99485C48F36491D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C72D1590CDDA9AB7275188F /* Pods_CarRepairFinder.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +161,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18247756204DB69A0012FE4B /* Build configuration list for PBXNativeTarget "CarRepairFinder" */;
 			buildPhases = (
+				DE6D24F571C18EAB245EBE58 /* [CP] Check Pods Manifest.lock */,
 				18247740204DB69A0012FE4B /* Sources */,
 				18247741204DB69A0012FE4B /* Frameworks */,
 				18247742204DB69A0012FE4B /* Resources */,
+				DD67A4A2D9C2C116320E82C2 /* [CP] Embed Pods Frameworks */,
+				EB389FA5024AD569C2A3D8C3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,6 +216,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18247766204DCA8A0012FE4B /* shops.json in Resources */,
+				1824775E204DBB650012FE4B /* RepairShopTableViewCell.xib in Resources */,
 				18247752204DB69A0012FE4B /* LaunchScreen.storyboard in Resources */,
 				1824774F204DB69A0012FE4B /* Assets.xcassets in Resources */,
 				1824774D204DB69A0012FE4B /* Main.storyboard in Resources */,
@@ -131,13 +226,78 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		DD67A4A2D9C2C116320E82C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CarRepairFinder/Pods-CarRepairFinder-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CarRepairFinder/Pods-CarRepairFinder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE6D24F571C18EAB245EBE58 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CarRepairFinder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB389FA5024AD569C2A3D8C3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CarRepairFinder/Pods-CarRepairFinder-resources.sh",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CarRepairFinder/Pods-CarRepairFinder-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		18247740204DB69A0012FE4B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1824774A204DB69A0012FE4B /* ViewController.swift in Sources */,
+				1824775A204DBB260012FE4B /* RepairShopListTableViewController.swift in Sources */,
 				18247748204DB69A0012FE4B /* AppDelegate.swift in Sources */,
+				1824775D204DBB650012FE4B /* RepairShopTableViewCell.swift in Sources */,
+				18247768204DCF1F0012FE4B /* GetAPIData.swift in Sources */,
+				1824776A204DD09D0012FE4B /* ShopsModel.swift in Sources */,
+				1824776E204DF6790012FE4B /* ShopDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,10 +432,12 @@
 		};
 		18247757204DB69A0012FE4B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A970B43FAE89ED0B23E5F709 /* Pods-CarRepairFinder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CarRepairFinder/Info.plist;
+				DEVELOPMENT_TEAM = 68SY486YZ7;
+				INFOPLIST_FILE = "$(SRCROOT)/CarRepairFinder/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lccj.CarRepairFinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -286,10 +448,12 @@
 		};
 		18247758204DB69A0012FE4B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 063128DA065520257E763FF1 /* Pods-CarRepairFinder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CarRepairFinder/Info.plist;
+				DEVELOPMENT_TEAM = 68SY486YZ7;
+				INFOPLIST_FILE = "$(SRCROOT)/CarRepairFinder/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lccj.CarRepairFinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
