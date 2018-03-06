@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="shopsCell" rowHeight="106" id="KGk-i7-Jjw" customClass="RepairShopTableViewCell" customModule="CarRepairFinder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="346" height="106"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="346" height="105.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oficina do João" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="We3-MO-aYa">
+                        <rect key="frame" x="16" y="11" width="207" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="itl-Gq-3f5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rua Coronel Leme da Fonseca, 215, Centro, Jundiai" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PjQ-oa-IeC">
+                        <rect key="frame" x="16" y="39" width="207" height="33"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aberto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Elv-5A-qPa">
+                        <rect key="frame" x="16" y="74" width="59" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="2BC-2g-IhE"/>
+                            <constraint firstAttribute="width" constant="59" id="oGV-G5-lDu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lac-N6-0gk">
+                        <rect key="frame" x="239" y="11" width="90" height="84"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="aNs-bU-wGN"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lac-N6-0gk" firstAttribute="leading" secondItem="We3-MO-aYa" secondAttribute="trailing" constant="16" id="2zY-cx-RkW"/>
+                    <constraint firstItem="Elv-5A-qPa" firstAttribute="bottom" secondItem="lac-N6-0gk" secondAttribute="bottom" id="7vG-p0-3Ns"/>
+                    <constraint firstItem="Elv-5A-qPa" firstAttribute="top" secondItem="PjQ-oa-IeC" secondAttribute="bottom" constant="2" id="9iM-Lz-pJ5"/>
+                    <constraint firstItem="We3-MO-aYa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="DnW-DQ-q6O"/>
+                    <constraint firstItem="We3-MO-aYa" firstAttribute="top" secondItem="lac-N6-0gk" secondAttribute="top" id="Mbl-fr-ysr"/>
+                    <constraint firstItem="We3-MO-aYa" firstAttribute="leading" secondItem="PjQ-oa-IeC" secondAttribute="leading" id="Yav-Zn-ckx"/>
+                    <constraint firstItem="Elv-5A-qPa" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="ePK-7g-Dh6"/>
+                    <constraint firstItem="PjQ-oa-IeC" firstAttribute="leading" secondItem="Elv-5A-qPa" secondAttribute="leading" id="luc-ca-Sub"/>
+                    <constraint firstItem="PjQ-oa-IeC" firstAttribute="top" secondItem="We3-MO-aYa" secondAttribute="bottom" constant="4" id="m9C-Ps-yuq"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="lac-N6-0gk" secondAttribute="trailing" constant="1" id="pGf-Rv-yRd"/>
+                    <constraint firstItem="We3-MO-aYa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="pYL-co-TKJ"/>
+                    <constraint firstItem="We3-MO-aYa" firstAttribute="trailing" secondItem="PjQ-oa-IeC" secondAttribute="trailing" id="we5-ce-hYh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="shopAddressLabel" destination="PjQ-oa-IeC" id="TAc-dT-5pC"/>
+                <outlet property="shopImage" destination="lac-N6-0gk" id="e9d-Y6-idl"/>
+                <outlet property="shopNameLabel" destination="We3-MO-aYa" id="fuO-7k-vaI"/>
+                <outlet property="shopStatusLabel" destination="Elv-5A-qPa" id="DVX-IV-ecs"/>
+            </connections>
+            <point key="canvasLocation" x="47" y="85"/>
+        </tableViewCell>
+    </objects>
+</document>
