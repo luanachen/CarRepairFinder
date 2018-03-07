@@ -18,12 +18,18 @@
 		18247768204DCF1F0012FE4B /* GetAPIData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18247767204DCF1F0012FE4B /* GetAPIData.swift */; };
 		1824776A204DD09D0012FE4B /* ShopsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18247769204DD09D0012FE4B /* ShopsModel.swift */; };
 		1824776E204DF6790012FE4B /* ShopDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1824776D204DF6790012FE4B /* ShopDetailViewController.swift */; };
-		182477B0204F0A590012FE4B /* CarRepairFinderSlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182477AF204F0A590012FE4B /* CarRepairFinderSlowTests.swift */; };
+		18247807205047DF0012FE4B /* ResultsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18247806205047DF0012FE4B /* ResultsModel.swift */; };
+		18247809205048280012FE4B /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18247808205048280012FE4B /* PhotoModel.swift */; };
+		1824780B205048600012FE4B /* GeometryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1824780A205048600012FE4B /* GeometryModel.swift */; };
+		1824780D2050488E0012FE4B /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1824780C2050488E0012FE4B /* LocationModel.swift */; };
+		1824780F205048B40012FE4B /* OpeningHoursModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1824780E205048B40012FE4B /* OpeningHoursModel.swift */; };
+		1824782020504DB50012FE4B /* ShopsListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18247804205045150012FE4B /* ShopsListTest.swift */; };
+		1824782120504DB50012FE4B /* CarRepairFinderSlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182477AF204F0A590012FE4B /* CarRepairFinderSlowTests.swift */; };
 		692F4259C0B9850A23BF258B /* Pods_CarRepairFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C72D1590CDDA9AB7275188F /* Pods_CarRepairFinder.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		182477B2204F0A590012FE4B /* PBXContainerItemProxy */ = {
+		1824781B20504DA90012FE4B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1824773C204DB69A0012FE4B /* Project object */;
 			proxyType = 1;
@@ -47,9 +53,15 @@
 		18247767204DCF1F0012FE4B /* GetAPIData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAPIData.swift; sourceTree = "<group>"; };
 		18247769204DD09D0012FE4B /* ShopsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsModel.swift; sourceTree = "<group>"; };
 		1824776D204DF6790012FE4B /* ShopDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopDetailViewController.swift; sourceTree = "<group>"; };
-		182477AD204F0A590012FE4B /* CarRepairFinderSlowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarRepairFinderSlowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		182477AF204F0A590012FE4B /* CarRepairFinderSlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRepairFinderSlowTests.swift; sourceTree = "<group>"; };
-		182477B1204F0A590012FE4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18247804205045150012FE4B /* ShopsListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsListTest.swift; sourceTree = "<group>"; };
+		18247806205047DF0012FE4B /* ResultsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsModel.swift; sourceTree = "<group>"; };
+		18247808205048280012FE4B /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		1824780A205048600012FE4B /* GeometryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryModel.swift; sourceTree = "<group>"; };
+		1824780C2050488E0012FE4B /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		1824780E205048B40012FE4B /* OpeningHoursModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningHoursModel.swift; sourceTree = "<group>"; };
+		1824781620504DA90012FE4B /* CarRepairFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarRepairFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1824781A20504DA90012FE4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C72D1590CDDA9AB7275188F /* Pods_CarRepairFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarRepairFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A970B43FAE89ED0B23E5F709 /* Pods-CarRepairFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarRepairFinder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarRepairFinder/Pods-CarRepairFinder.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,7 +75,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		182477AA204F0A590012FE4B /* Frameworks */ = {
+		1824781320504DA90012FE4B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -86,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				18247746204DB69A0012FE4B /* CarRepairFinder */,
-				182477AE204F0A590012FE4B /* CarRepairFinderSlowTests */,
+				1824781720504DA90012FE4B /* CarRepairFinderTests */,
 				18247745204DB69A0012FE4B /* Products */,
 				14945276C20047E73A0A03C9 /* Pods */,
 				185B06A8A99485C48F36491D /* Frameworks */,
@@ -97,7 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				18247744204DB69A0012FE4B /* CarRepairFinder.app */,
-				182477AD204F0A590012FE4B /* CarRepairFinderSlowTests.xctest */,
+				1824781620504DA90012FE4B /* CarRepairFinderTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -157,6 +169,11 @@
 			isa = PBXGroup;
 			children = (
 				18247769204DD09D0012FE4B /* ShopsModel.swift */,
+				18247806205047DF0012FE4B /* ResultsModel.swift */,
+				18247808205048280012FE4B /* PhotoModel.swift */,
+				1824780A205048600012FE4B /* GeometryModel.swift */,
+				1824780C2050488E0012FE4B /* LocationModel.swift */,
+				1824780E205048B40012FE4B /* OpeningHoursModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -169,13 +186,14 @@
 			name = Gateway;
 			sourceTree = "<group>";
 		};
-		182477AE204F0A590012FE4B /* CarRepairFinderSlowTests */ = {
+		1824781720504DA90012FE4B /* CarRepairFinderTests */ = {
 			isa = PBXGroup;
 			children = (
+				18247804205045150012FE4B /* ShopsListTest.swift */,
 				182477AF204F0A590012FE4B /* CarRepairFinderSlowTests.swift */,
-				182477B1204F0A590012FE4B /* Info.plist */,
+				1824781A20504DA90012FE4B /* Info.plist */,
 			);
-			path = CarRepairFinderSlowTests;
+			path = CarRepairFinderTests;
 			sourceTree = "<group>";
 		};
 		185B06A8A99485C48F36491D /* Frameworks */ = {
@@ -209,22 +227,22 @@
 			productReference = 18247744204DB69A0012FE4B /* CarRepairFinder.app */;
 			productType = "com.apple.product-type.application";
 		};
-		182477AC204F0A590012FE4B /* CarRepairFinderSlowTests */ = {
+		1824781520504DA90012FE4B /* CarRepairFinderTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 182477B6204F0A590012FE4B /* Build configuration list for PBXNativeTarget "CarRepairFinderSlowTests" */;
+			buildConfigurationList = 1824781D20504DA90012FE4B /* Build configuration list for PBXNativeTarget "CarRepairFinderTests" */;
 			buildPhases = (
-				182477A9204F0A590012FE4B /* Sources */,
-				182477AA204F0A590012FE4B /* Frameworks */,
-				182477AB204F0A590012FE4B /* Resources */,
+				1824781220504DA90012FE4B /* Sources */,
+				1824781320504DA90012FE4B /* Frameworks */,
+				1824781420504DA90012FE4B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				182477B3204F0A590012FE4B /* PBXTargetDependency */,
+				1824781C20504DA90012FE4B /* PBXTargetDependency */,
 			);
-			name = CarRepairFinderSlowTests;
-			productName = CarRepairFinderSlowTests;
-			productReference = 182477AD204F0A590012FE4B /* CarRepairFinderSlowTests.xctest */;
+			name = CarRepairFinderTests;
+			productName = CarRepairFinderTests;
+			productReference = 1824781620504DA90012FE4B /* CarRepairFinderTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -241,7 +259,7 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
-					182477AC204F0A590012FE4B = {
+					1824781520504DA90012FE4B = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 18247743204DB69A0012FE4B;
@@ -262,7 +280,7 @@
 			projectRoot = "";
 			targets = (
 				18247743204DB69A0012FE4B /* CarRepairFinder */,
-				182477AC204F0A590012FE4B /* CarRepairFinderSlowTests */,
+				1824781520504DA90012FE4B /* CarRepairFinderTests */,
 			);
 		};
 /* End PBXProject section */
@@ -280,7 +298,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		182477AB204F0A590012FE4B /* Resources */ = {
+		1824781420504DA90012FE4B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -359,26 +377,32 @@
 				18247748204DB69A0012FE4B /* AppDelegate.swift in Sources */,
 				1824775D204DBB650012FE4B /* RepairShopTableViewCell.swift in Sources */,
 				18247768204DCF1F0012FE4B /* GetAPIData.swift in Sources */,
+				1824780B205048600012FE4B /* GeometryModel.swift in Sources */,
 				1824776A204DD09D0012FE4B /* ShopsModel.swift in Sources */,
+				18247807205047DF0012FE4B /* ResultsModel.swift in Sources */,
+				18247809205048280012FE4B /* PhotoModel.swift in Sources */,
+				1824780F205048B40012FE4B /* OpeningHoursModel.swift in Sources */,
+				1824780D2050488E0012FE4B /* LocationModel.swift in Sources */,
 				1824776E204DF6790012FE4B /* ShopDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		182477A9204F0A590012FE4B /* Sources */ = {
+		1824781220504DA90012FE4B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				182477B0204F0A590012FE4B /* CarRepairFinderSlowTests.swift in Sources */,
+				1824782120504DB50012FE4B /* CarRepairFinderSlowTests.swift in Sources */,
+				1824782020504DB50012FE4B /* ShopsListTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		182477B3204F0A590012FE4B /* PBXTargetDependency */ = {
+		1824781C20504DA90012FE4B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 18247743204DB69A0012FE4B /* CarRepairFinder */;
-			targetProxy = 182477B2204F0A590012FE4B /* PBXContainerItemProxy */;
+			targetProxy = 1824781B20504DA90012FE4B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -541,14 +565,14 @@
 			};
 			name = Release;
 		};
-		182477B4204F0A590012FE4B /* Debug */ = {
+		1824781E20504DA90012FE4B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CarRepairFinderSlowTests/Info.plist;
+				INFOPLIST_FILE = CarRepairFinderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = lccj.CarRepairFinderSlowTests;
+				PRODUCT_BUNDLE_IDENTIFIER = lccj.CarRepairFinderTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -556,14 +580,14 @@
 			};
 			name = Debug;
 		};
-		182477B5204F0A590012FE4B /* Release */ = {
+		1824781F20504DA90012FE4B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CarRepairFinderSlowTests/Info.plist;
+				INFOPLIST_FILE = CarRepairFinderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = lccj.CarRepairFinderSlowTests;
+				PRODUCT_BUNDLE_IDENTIFIER = lccj.CarRepairFinderTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -592,11 +616,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		182477B6204F0A590012FE4B /* Build configuration list for PBXNativeTarget "CarRepairFinderSlowTests" */ = {
+		1824781D20504DA90012FE4B /* Build configuration list for PBXNativeTarget "CarRepairFinderTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				182477B4204F0A590012FE4B /* Debug */,
-				182477B5204F0A590012FE4B /* Release */,
+				1824781E20504DA90012FE4B /* Debug */,
+				1824781F20504DA90012FE4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

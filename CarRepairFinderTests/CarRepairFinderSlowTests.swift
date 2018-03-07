@@ -27,7 +27,7 @@ class CarRepairFinderSlowTests: XCTestCase {
             let shopsDataModel = try decoder.decode(ShopsModel.self, from: myJson!)
             shopsArray = shopsDataModel.results
             if shopsArray.isEmpty {
-                print(shopsDataModel.status)
+                print(shopsDataModel.status!)
             }
         } catch {
             print("Error while parsing json: \(error)")

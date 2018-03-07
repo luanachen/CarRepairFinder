@@ -27,7 +27,7 @@ class GetAPIData {
                     let shopsDataModel = try decoder.decode(ShopsModel.self, from: response.data!)
                     shopsArray = shopsDataModel.results
                     if shopsArray.isEmpty {
-                        print(shopsDataModel.status)
+                        print(shopsDataModel.status!)
                     }
                 } catch {
                     print("Error while parsing json: \(error)")
