@@ -34,7 +34,7 @@ class GetAPIData {
                 }
             } else {
                 print("Error with request: \(String(describing: response.result.error))")
-                let alerta = UIAlertController(title: "Alerta", message: "Connection Issues", preferredStyle: .alert)
+                let alerta = UIAlertController(title: "Alerta", message: "Erro ao receber dados, por favor reporte o problema. :(", preferredStyle: .alert)
                 let actionOk = UIAlertAction(title: "Ok", style: .default, handler: nil)
                 alerta.addAction(actionOk)
                 UIApplication.shared.keyWindow?.rootViewController?.present(alerta, animated: true, completion: nil)
@@ -45,7 +45,7 @@ class GetAPIData {
     
     
     func getShopImage(photoReference: Photo, completionHandler: (UIImage) -> ()) {
-        var image = UIImage()
+        let image = UIImage()
         let imageURL = URL(string: "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=\(String(describing: photoReference))&key=\(AppDelegate.GOOGLE_PLACES_KEY)")
         
         Alamofire.request(imageURL!).responseData { (response) in

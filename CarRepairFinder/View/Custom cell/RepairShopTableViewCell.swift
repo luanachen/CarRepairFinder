@@ -10,7 +10,6 @@ import UIKit
 
 class RepairShopTableViewCell: UITableViewCell {
 
-    
     @IBOutlet weak var shopNameLabel: UILabel!
     @IBOutlet weak var shopAddressLabel: UILabel!
     @IBOutlet weak var shopStatusLabel: UILabel!

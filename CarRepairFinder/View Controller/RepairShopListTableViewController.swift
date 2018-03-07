@@ -10,9 +10,10 @@ import UIKit
 import CoreLocation
 import GooglePlaces
 import Kingfisher
-
+import SVProgressHUD
 
 class RepairShopListTableViewController: UITableViewController {
+    
     
     // MARK: Properties
     var locationManager = CLLocationManager()
@@ -38,15 +39,9 @@ class RepairShopListTableViewController: UITableViewController {
             locationManager.delegate = self
             locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
             locationManager.startUpdatingLocation()
+            SVProgressHUD.show()
         }
     }
-
-    func upDatePlaces(latitude: String, longitude: String)  {
-        
-        
-    }
-    
-    
     
     // MARK: - Table view data source
     
@@ -60,6 +55,9 @@ class RepairShopListTableViewController: UITableViewController {
         return shopsArray.count
     }
     
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 120
+    }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "shopsCell", for: indexPath) as! RepairShopTableViewCell
@@ -102,12 +100,16 @@ extension RepairShopListTableViewController: CLLocationManagerDelegate {
         let location = locations[locations.count - 1] // get the last location
         if location.horizontalAccuracy > 0 {
             locationManager.stopUpdatingLocation()
+            SVProgressHUD.dismiss()
             let latitude = String(location.coordinate.latitude)
             let longitude = String(location.coordinate.longitude)
+            print(latitude, longitude)
             GetAPIData().fetchGooglePlaces(latitude: latitude, longitude: longitude, completionHandler: { (shopsArray) in
                 self.shopsArray = shopsArray
                 self.tableView.reloadData()
             })
+            
+            
         }
     }
     
