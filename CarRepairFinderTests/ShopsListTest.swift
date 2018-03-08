@@ -21,17 +21,16 @@ class ShopsListTest: XCTestCase {
         super.tearDown()
     }
     
-    func test_Init_Name() {
-        let shopName = Result(name: "Foo")
+    func test_Init_TakesName() {
+        let shopName = Result.init(name: "Foo", vicinity: nil)
 
         XCTAssertEqual(shopName.name, "Foo")
     }
     
-    func test_Init_Address() {
-        _ = Result(name: "")
-        let shopAddress = Result(geometry: nil, icon: nil, id: nil, name: "", openingHours: nil, photos: nil, placeID: nil, reference: nil, vicinity: "Foo")
+    func test_Init_TakesAddress() {
+        let shopAddress = Result.init(name: "Foo", vicinity: "Foo2")
         
-        XCTAssertEqual( shopAddress.vicinity, "Foo")
+        XCTAssertEqual(shopAddress.vicinity, "Foo2")
     }
    
     
