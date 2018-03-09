@@ -25,6 +25,8 @@
 		1824780F205048B40012FE4B /* OpeningHoursModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1824780E205048B40012FE4B /* OpeningHoursModel.swift */; };
 		1824782020504DB50012FE4B /* ShopsListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18247804205045150012FE4B /* ShopsListTest.swift */; };
 		1824782120504DB50012FE4B /* CarRepairFinderSlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182477AF204F0A590012FE4B /* CarRepairFinderSlowTests.swift */; };
+		185AF4452051F62300C24501 /* CarRepairFakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185AF4442051F62300C24501 /* CarRepairFakeTests.swift */; };
+		185AF4472051F83700C24501 /* DHURLSessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185AF4462051F83700C24501 /* DHURLSessionMock.swift */; };
 		692F4259C0B9850A23BF258B /* Pods_CarRepairFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C72D1590CDDA9AB7275188F /* Pods_CarRepairFinder.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +64,8 @@
 		1824780E205048B40012FE4B /* OpeningHoursModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningHoursModel.swift; sourceTree = "<group>"; };
 		1824781620504DA90012FE4B /* CarRepairFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarRepairFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1824781A20504DA90012FE4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		185AF4442051F62300C24501 /* CarRepairFakeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRepairFakeTests.swift; sourceTree = "<group>"; };
+		185AF4462051F83700C24501 /* DHURLSessionMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DHURLSessionMock.swift; sourceTree = "<group>"; };
 		2C72D1590CDDA9AB7275188F /* Pods_CarRepairFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarRepairFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A970B43FAE89ED0B23E5F709 /* Pods-CarRepairFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarRepairFinder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarRepairFinder/Pods-CarRepairFinder.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -157,6 +161,7 @@
 		18247764204DC7470012FE4B /* Supporting files */ = {
 			isa = PBXGroup;
 			children = (
+				185AF4462051F83700C24501 /* DHURLSessionMock.swift */,
 				1824774E204DB69A0012FE4B /* Assets.xcassets */,
 				18247750204DB69A0012FE4B /* LaunchScreen.storyboard */,
 				18247753204DB69A0012FE4B /* Info.plist */,
@@ -191,6 +196,7 @@
 			children = (
 				18247804205045150012FE4B /* ShopsListTest.swift */,
 				182477AF204F0A590012FE4B /* CarRepairFinderSlowTests.swift */,
+				185AF4442051F62300C24501 /* CarRepairFakeTests.swift */,
 				1824781A20504DA90012FE4B /* Info.plist */,
 			);
 			path = CarRepairFinderTests;
@@ -375,6 +381,7 @@
 			files = (
 				1824775A204DBB260012FE4B /* RepairShopListTableViewController.swift in Sources */,
 				18247748204DB69A0012FE4B /* AppDelegate.swift in Sources */,
+				185AF4472051F83700C24501 /* DHURLSessionMock.swift in Sources */,
 				1824775D204DBB650012FE4B /* RepairShopTableViewCell.swift in Sources */,
 				18247768204DCF1F0012FE4B /* GetAPIData.swift in Sources */,
 				1824780B205048600012FE4B /* GeometryModel.swift in Sources */,
@@ -391,6 +398,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185AF4452051F62300C24501 /* CarRepairFakeTests.swift in Sources */,
 				1824782120504DB50012FE4B /* CarRepairFinderSlowTests.swift in Sources */,
 				1824782020504DB50012FE4B /* ShopsListTest.swift in Sources */,
 			);

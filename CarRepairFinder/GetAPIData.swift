@@ -11,27 +11,20 @@ import Alamofire
 
 class GetAPIData {
     
+    var defaultSession: DHURLSession = URLSession(configuration: URLSessionConfiguration.default)
+    
     func fetchGooglePlaces(latitude: String, longitude: String, completionHandler: @escaping ([Result]) -> ()) {
         
         var shopsArray = [Result]()
-        
+
         let googleURL = URL(string: "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=\(latitude),\(longitude)&radius=500&type=car_repair&key=\(AppDelegate.GOOGLE_PLACES_KEY)")
-        
-        //        let shopsJSONFile = Bundle.main.url(forResource: "shops", withExtension: "json")
         
         Alamofire.request(googleURL!).responseJSON { (response) in
             
             if response.result.isSuccess {
-                do {
-                    let decoder = JSONDecoder()
-                    let shopsDataModel = try decoder.decode(ShopsModel.self, from: response.data!)
-                    shopsArray = shopsDataModel.results
-                    if shopsArray.isEmpty {
-                        print(shopsDataModel.status!)
-                    }
-                } catch {
-                    print("Error while parsing json: \(error)")
-                }
+                
+               shopsArray = self.updatePlacesResult(response.data)
+            
             } else {
                 print("Error with request: \(String(describing: response.result.error))")
                 let alerta = UIAlertController(title: "Alerta", message: "Erro ao receber dados, por favor reporte o problema. :(", preferredStyle: .alert)
@@ -43,6 +36,25 @@ class GetAPIData {
         }
     }
     
+    func updatePlacesResult(_ data: Data?) -> [Result]{
+        var shopsArray = [Result]()
+        var shopsDataModel = ShopsModel(results: shopsArray)
+
+        do {
+            let decoder = JSONDecoder()
+            if let data = data {
+            shopsDataModel = try decoder.decode(ShopsModel.self, from: data)
+            shopsArray = shopsDataModel.results
+            } else { print("no data retrieved") }
+            if shopsArray.isEmpty {
+                print(shopsDataModel.status!)
+            }
+        } catch {
+            print("Error while parsing json: \(error)")
+        }
+        
+        return shopsArray
+    }
     
     func getShopImage(photoReference: Photo, completionHandler: (UIImage) -> ()) {
         let image = UIImage()

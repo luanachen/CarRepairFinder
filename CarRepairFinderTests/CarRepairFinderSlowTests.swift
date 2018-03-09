@@ -10,48 +10,39 @@ import XCTest
 @testable import CarRepairFinder
 
 class CarRepairFinderSlowTests: XCTestCase {
-    
-    var shopsArray = [Result]()
-    
-    var sessionUnderTest: URLSession!
+        
+    var sut: URLSession!
     
     override func setUp() {
         super.setUp()
         
-        let url = Bundle.main.url(forResource: "shops", withExtension: "json")
-        
-        let myJson = try? Data(contentsOf: url!)
-        
-        do {
-            let decoder = JSONDecoder()
-            let shopsDataModel = try decoder.decode(ShopsModel.self, from: myJson!)
-            shopsArray = shopsDataModel.results
-            if shopsArray.isEmpty {
-                print(shopsDataModel.status!)
-            }
-        } catch {
-            print("Error while parsing json: \(error)")
-        }
-        
-        
+        sut = URLSession(configuration: URLSessionConfiguration.default)
     }
     
     override func tearDown() {
-        sessionUnderTest = nil
+        sut = nil
         super.tearDown()
     }
-    
-    func testParsingToShopModel() {
-        let shops = shopsArray[0]
-        XCTAssertEqual(shops.name, "Rhythmboat Cruises")
-        XCTAssertEqual(shops.vicinity, "Pyrmont Bay Wharf Darling Dr, Sydney")
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+
+    func testCallToGooglePlacesCompletes() {
+
+        let url = URL(string: "https://maps.googleapis.com/maps/api/place/textsearch/xml?query=restaurants+in+Sydney&key=\(AppDelegate.GOOGLE_PLACES_KEY)")
+        let promise = expectation(description: "Completion handler invoked")
+        var statusCode: Int?
+        var responseError: Error?
+        
+        let dataTask = sut.dataTask(with: url!) { data, response, error in
+            statusCode = (response as? HTTPURLResponse)?.statusCode
+            responseError = error
+
+            promise.fulfill()
         }
+        dataTask.resume()
+        waitForExpectations(timeout: 5, handler: nil)
+        
+        XCTAssertNil(responseError)
+        XCTAssertEqual(statusCode, 200)
     }
+
     
 }

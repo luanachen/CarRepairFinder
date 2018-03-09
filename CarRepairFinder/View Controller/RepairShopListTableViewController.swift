@@ -14,13 +14,11 @@ import SVProgressHUD
 
 class RepairShopListTableViewController: UITableViewController {
     
-    
     // MARK: Properties
     var locationManager = CLLocationManager()
     var shopsArray = [Result]()
     var photoReferenceArray = [Photo]()
-        
-        
+
     // MARK: ViewCicle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +26,6 @@ class RepairShopListTableViewController: UITableViewController {
         tableView.register(UINib(nibName: "RepairShopTableViewCell", bundle: nil), forCellReuseIdentifier: "shopsCell")
     
         getCurrentLocation()
-        
     }
     
     // MARK: Functions
@@ -50,7 +47,6 @@ class RepairShopListTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // TODO: UPDATE ROWS
         
         return shopsArray.count
     }
@@ -72,14 +68,11 @@ class RepairShopListTableViewController: UITableViewController {
             cell.shopStatusLabel.textColor = UIColor.red
         }
         
-//        let iconURLString = URL(string: shopsArray[indexPath.row].icon)
-//        cell.shopImage.kf.setImage(with: iconURLString)
-        
         if let photoReference = shopsArray[indexPath.row].photos?.first?.photoReference {
            let imageURL = URL(string: "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=\(photoReference)&key=\(AppDelegate.GOOGLE_PLACES_KEY)")
             cell.shopImage.kf.setImage(with: imageURL)
         }
-        
+
         return cell
     }
     
@@ -103,13 +96,10 @@ extension RepairShopListTableViewController: CLLocationManagerDelegate {
             SVProgressHUD.dismiss()
             let latitude = String(location.coordinate.latitude)
             let longitude = String(location.coordinate.longitude)
-            print(latitude, longitude)
             GetAPIData().fetchGooglePlaces(latitude: latitude, longitude: longitude, completionHandler: { (shopsArray) in
                 self.shopsArray = shopsArray
                 self.tableView.reloadData()
             })
-            
-            
         }
     }
     

@@ -28,9 +28,6 @@ class ShopDetailViewController: UIViewController {
             let imageURL = URL(string: "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=\(photoReference)&key=\(AppDelegate.GOOGLE_PLACES_KEY)")
             selectedShopImage.kf.setImage(with: imageURL)
         }
-
-//        let iconURLString = URL(string: (selectedShop?.icon)!)
-//        selectedShopImage.kf.setImage(with: iconURLString)
         
         if selectedShop!.openingHours?.openNow == true {
             selectedShopStatus.text = "Aberto"
